@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="head">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" class="curve" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="hero">
+        <form>
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="number" required>
+                <label for="number">Phone Number</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="email" required>
+                <label for="email">Email Address</label>
+            </div>
+            <div class="input-group">
+                <textarea name="message" rows="8" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</div> 
+ <!-- js for toggle -->
+ <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            ManuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
